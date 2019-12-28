@@ -1,5 +1,7 @@
 #include <iostream>
+#include <cstring>
 #include <fstream>
+#include <sstream>
 using namespace std; 
 #include "searchFiles.h"
 #include "writeOutput.h"
@@ -35,6 +37,13 @@ int main() {
        cout<<"Lütfen aramak istediðiniz metni giriniz: "<<endl;
        cin>>searchText;
     } while(searchText.length() < 3);
+    // Write OutputFile SearchText
+    stringstream streamStr;
+    streamStr << "------------------------- Searching: '";
+    streamStr << searchText;
+    streamStr << "' -------------------------";
+    streamStr << "\n\n\n";
+	writeOutputFile(streamStr.str());
     // Search Files
 	searchFiles(filePath, searchText);
 	// Run Output File

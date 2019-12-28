@@ -1,9 +1,6 @@
 #include <iostream>
 #include <fstream>
-
-#include <string>
-#include <sstream>
-#include <bitset>
+#include <cstring>
 using namespace std; 
 #include "searchAlgorithm.h"
 #include "distanceAlgorithm.h"
@@ -20,10 +17,8 @@ void readFile(string filePath, string searchText){
          string tp;
          int line = 1;
          while(getline(newfile, tp)){
-	        searchAlgorithm(tp, searchText, line);
 	        searchAlgorithm(tp, toLowerString(searchText), line);
 	        searchAlgorithm(tp, toUpperString(searchText), line);
-	        distanceAlgorithm(tp, searchText, line);
 	        distanceAlgorithm(tp, toLowerString(searchText), line);
 	        distanceAlgorithm(tp, toUpperString(searchText), line);
 	        line++;

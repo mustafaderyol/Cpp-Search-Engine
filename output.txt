@@ -1,3 +1,7 @@
+------------------------- Searching: 'abab' -------------------------
+
+
+
 |----[ asd ]
 |----|----[ asdasdagq ]
 |----|----[ kke ]
@@ -5,18 +9,36 @@
 |----|----Yeni Metin Belgesi.txt
 |----[ asdasd ]
 |----|----Copy (2) of Yeni Metin Belgesi.txt
--------------------------> Did you mean? -> ABAC - Line: 1 - Date: 28/12/2019 13:42:1 - Equals Rate: 75
+-------------------------> Line: 1 - Index: 0 - Date: 28/12/2019 16:2:58
+-------------------------> Line: 1 - Index: 10 - Date: 28/12/2019 16:2:58
+-------------------------> Line: 1 - Index: 15 - Date: 28/12/2019 16:2:58
+-------------------------> Did you mean this? -> 'ABAC' - Line: 1 - Date: 28/12/2019 16:2:58 - Match Rate: %75
 |----|----Copy (3) of Yeni Metin Belgesi.txt
 |----|----Copy of Yeni Metin Belgesi.txt
 |----|----Yeni Metin Belgesi.txt
--------------------------> Did you mean? -> ABAC - Line: 1 - Date: 28/12/2019 13:42:1 - Equals Rate: 75
+-------------------------> Line: 1 - Index: 0 - Date: 28/12/2019 16:2:58
+-------------------------> Line: 1 - Index: 10 - Date: 28/12/2019 16:2:58
+-------------------------> Line: 1 - Index: 15 - Date: 28/12/2019 16:2:58
+-------------------------> Did you mean this? -> 'ABAC' - Line: 1 - Date: 28/12/2019 16:2:58 - Match Rate: %75
 |----book.xml
--------------------------> Did you mean? -> ABAC - Line: 4 - Date: 28/12/2019 13:42:1 - Equals Rate: 75
+-------------------------> Line: 4 - Index: 14 - Date: 28/12/2019 16:2:58
+-------------------------> Line: 4 - Index: 24 - Date: 28/12/2019 16:2:58
+-------------------------> Line: 4 - Index: 29 - Date: 28/12/2019 16:2:58
+-------------------------> Did you mean this? -> 'ABAC' - Line: 4 - Date: 28/12/2019 16:2:58 - Match Rate: %75
 |----deneme.html
--------------------------> Did you mean? -> ABAC - Line: 4 - Date: 28/12/2019 13:42:3 - Equals Rate: 75
+-------------------------> Line: 4 - Index: 0 - Date: 28/12/2019 16:3:0
+-------------------------> Line: 4 - Index: 10 - Date: 28/12/2019 16:3:0
+-------------------------> Line: 4 - Index: 15 - Date: 28/12/2019 16:3:0
+-------------------------> Did you mean this? -> 'ABAC' - Line: 4 - Date: 28/12/2019 16:3:0 - Match Rate: %75
 |----[ des ]
 |----FL_insurance_sample.csv
--------------------------> Did you mean? -> ABAC - Line: 2 - Date: 28/12/2019 13:42:3 - Equals Rate: 75
+-------------------------> Line: 2 - Index: 10 - Date: 28/12/2019 16:3:0
+-------------------------> Line: 2 - Index: 20 - Date: 28/12/2019 16:3:0
+-------------------------> Line: 2 - Index: 25 - Date: 28/12/2019 16:3:0
+-------------------------> Did you mean this? -> 'ABAC' - Line: 2 - Date: 28/12/2019 16:3:0 - Match Rate: %75
 |----[ glqw ]
 |----Yeni Metin Belgesi.txt
--------------------------> Did you mean? -> ABAC - Line: 1 - Date: 28/12/2019 13:42:4 - Equals Rate: 75
+-------------------------> Line: 1 - Index: 0 - Date: 28/12/2019 16:3:0
+-------------------------> Line: 1 - Index: 10 - Date: 28/12/2019 16:3:0
+-------------------------> Line: 1 - Index: 15 - Date: 28/12/2019 16:3:0
+-------------------------> Did you mean this? -> 'ABAC' - Line: 1 - Date: 28/12/2019 16:3:0 - Match Rate: %75

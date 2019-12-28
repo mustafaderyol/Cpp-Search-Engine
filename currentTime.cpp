@@ -15,10 +15,10 @@ string getCurrentDate(){
          << "/"
          << 1900 + ltm->tm_year
          << " "
-         << 1 + ltm->tm_hour
+         << ltm->tm_hour
          << ":"
-         << 1 + ltm->tm_min
+         << ltm->tm_min
          << ":"
-         << 1 + ltm->tm_sec;
+         << ltm->tm_sec;
    return date.str();
 }

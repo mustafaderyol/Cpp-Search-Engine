@@ -34,13 +34,13 @@ void distanceAlgorithm(string mainText, string searchText, int line) {
          int rate = (1 - ((double)distance / (double)subMainText.length())) * 100;
          if(rate >= 75 && rate != 100){ // Benzerlik oraný
 	          stringstream foundStr;
-              foundStr << "-------------------------> Did you mean? -> ";
+              foundStr << "-------------------------> Did you mean this? -> '";
               foundStr << subMainText;
-              foundStr << " - Line: ";
+              foundStr << "' - Line: ";
               foundStr << line;
               foundStr << " - Date: ";
               foundStr << getCurrentDate();
-              foundStr << " - Equals Rate: ";
+              foundStr << " - Match Rate: %";
               foundStr << rate;
 		      writeOutputFile(foundStr.str());
         }   
