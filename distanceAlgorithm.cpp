@@ -25,7 +25,7 @@ int getDistance(string mainText, string searchText, int mainTextLength, int sear
 }
  
 // write Did you mean?
-void distanceAlgorithm(string mainText, string searchText, int line) {
+void distanceAlgorithm(string mainText, string searchText, string originalMainText, int line) {
      int diffLength = (mainText.length() - searchText.length());
      int searchTextLength = searchText.length();
      for(int i = 0; i < diffLength ; i++){
@@ -35,7 +35,7 @@ void distanceAlgorithm(string mainText, string searchText, int line) {
          if(rate >= 75 && rate != 100){ // Benzerlik oraný
 	          stringstream foundStr;
               foundStr << "-------------------------> Did you mean this? -> '";
-              foundStr << subMainText;
+              foundStr << originalMainText.substr(i, searchText.length());
               foundStr << "' - Line: ";
               foundStr << line;
               foundStr << " - Date: ";

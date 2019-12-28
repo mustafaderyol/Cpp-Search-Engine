@@ -16,11 +16,9 @@ void readFile(string filePath, string searchText){
      if (newfile.is_open()){
          string tp;
          int line = 1;
-         while(getline(newfile, tp)){
-	        searchAlgorithm(tp, toLowerString(searchText), line);
-	        searchAlgorithm(tp, toUpperString(searchText), line);
-	        distanceAlgorithm(tp, toLowerString(searchText), line);
-	        distanceAlgorithm(tp, toUpperString(searchText), line);
+         while(getline(newfile, tp)){;
+	        searchAlgorithm(toUpperString(tp), toUpperString(searchText), line);
+	        distanceAlgorithm(toLowerString(tp), toLowerString(searchText), tp, line);
 	        line++;
          }
          newfile.close();
