@@ -1,0 +1,51 @@
+# Project: SearchProject
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main.o searchAlgorithm.o distanceAlgorithm.o currentTime.o searchFiles.o writeOutput.o readFile.o utils.o $(RES)
+LINKOBJ  = main.o searchAlgorithm.o distanceAlgorithm.o currentTime.o searchFiles.o writeOutput.o readFile.o utils.o $(RES)
+LIBS =   
+INCS = 
+CXXINCS = 
+BIN  = SearchProject.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before SearchProject.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "SearchProject.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+searchAlgorithm.o: searchAlgorithm.cpp
+	$(CPP) -c searchAlgorithm.cpp -o searchAlgorithm.o $(CXXFLAGS)
+
+distanceAlgorithm.o: distanceAlgorithm.cpp
+	$(CPP) -c distanceAlgorithm.cpp -o distanceAlgorithm.o $(CXXFLAGS)
+
+currentTime.o: currentTime.cpp
+	$(CPP) -c currentTime.cpp -o currentTime.o $(CXXFLAGS)
+
+searchFiles.o: searchFiles.cpp
+	$(CPP) -c searchFiles.cpp -o searchFiles.o $(CXXFLAGS)
+
+writeOutput.o: writeOutput.cpp
+	$(CPP) -c writeOutput.cpp -o writeOutput.o $(CXXFLAGS)
+
+readFile.o: readFile.cpp
+	$(CPP) -c readFile.cpp -o readFile.o $(CXXFLAGS)
+
+utils.o: utils.cpp
+	$(CPP) -c utils.cpp -o utils.o $(CXXFLAGS)
