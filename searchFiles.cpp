@@ -10,10 +10,7 @@ void search(string drct, string prefix, string searchText){
     string filepath;
     struct dirent *de;
     struct stat filestat;
-    int n = drct.length();
-    char char_array[n + 1]; 
-    strcpy(char_array, drct.c_str()); 
-	DIR *dr = opendir(char_array); 
+	DIR *dr = opendir(drct.c_str()); 
 	while ((de = readdir(dr)) != NULL) {
         filepath = drct + "/" + de->d_name;
         string nameString(de->d_name);

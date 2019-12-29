@@ -13,12 +13,9 @@ int main() {
     string filePath = "./deneme/";
 	// Output File
 	string outputFileName = getOutputFileName();
-    int n = outputFileName.length();
-    char charOutputFileName[n + 1]; 
-    strcpy(charOutputFileName, outputFileName.c_str()); 
     fstream file;
-    remove(charOutputFileName);
-    file.open(charOutputFileName, ios::out); 
+    remove(outputFileName.c_str());
+    file.open(outputFileName.c_str(), ios::out); 
     if(!file) { 
        cout<<"Error in creating file!!!"; 
 	   system("pause");

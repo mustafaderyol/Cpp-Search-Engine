@@ -19,10 +19,3 @@ string toUpperString(string text){
    }
    return text;
 }
-
-char* toChar(string text){
-    int n = text.length();
-    char char_array[n + 1]; 
-    strcpy(char_array, text.c_str()); 
-    return char_array;
-}

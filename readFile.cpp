@@ -9,10 +9,7 @@ using namespace std;
 
 void readFile(string filePath, string searchText){
      fstream newfile;
-     int n = filePath.length();
-     char char_array[n + 1]; 
-     strcpy(char_array, filePath.c_str()); 
-     newfile.open(char_array, ios::in); 
+     newfile.open(filePath.c_str(), ios::in); 
      if (newfile.is_open()){
          string tp;
          int line = 1;
